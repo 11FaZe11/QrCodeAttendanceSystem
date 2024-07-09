@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/qr_code_attendance.css' %}">
+    <title>QR Code Reader</title>
+</head>
+<body>
+    <h1>Upload a QR Code to Read</h1>
+    <form action="{% url 'read_qr_code' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="qr_image" required>
+        <button type="submit">Read QR Code</button>
+    </form>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>

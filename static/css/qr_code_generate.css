@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    background: #1c1e26;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* This ensures content is aligned vertically */
+}
+
+form {
+    padding: 20px;
+    background-color: #1e2a34;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 30px; /* Adjust the value as needed */
+}
+
+.qr-code-container {
+    padding: 20px;
+    background-color: #1e2a34;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+img {
+    border: 5px solid #726a6a;
+    border-radius: 50%; /* Makes the border circular */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: block; /* Ensures the image is block level for margin auto to work */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+a {
+    background-color: #4c95af;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+}
+
+a:hover {
+    background-color: #45a049;
+    margin-bottom: 100px; /* Adjust the value as needed */
+
+}
+
+button {
+    background-color: #4c95af;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007B9E;
+}
+input[type="text"],
+textarea {
+    width: 80%; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed for input */
+    font-size: 16px; /* Adjust the font size as needed */
+    margin: 10px 0; /* Adds some space around the input/textarea */
+    padding: 0 10px; /* Adds some padding inside the input/textarea */
+}
+
+textarea {
+    height: 100px; /* Adjust the height as needed for textarea */
+}
+#h1 {
+    color: #4c95af;
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
